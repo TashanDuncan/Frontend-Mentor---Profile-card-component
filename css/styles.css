@@ -356,7 +356,8 @@ template {
   list-style-type: none;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   height: 100%;
 }
@@ -367,7 +368,7 @@ body {
   background-position: top left, bottom right;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-color: #19A1AD;
+  background-color: #19a1ad;
   background-size: 500px;
 }
 
@@ -387,7 +388,7 @@ body {
   z-index: 999;
 }
 .card-top {
-  background-image: url(../../images/bg-pattern-card.svg);
+  background-image: url(./../images/bg-pattern-card.svg);
   background-repeat: repeat;
   height: 70%;
   width: 100%;
