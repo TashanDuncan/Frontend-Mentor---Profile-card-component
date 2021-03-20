@@ -1,0 +1,16 @@
+.pattern {
+  &-top,
+  &-bottom {
+    position: absolute;
+  }
+
+  &-top {
+    top: -60%;
+    left: -140%;
+  }
+
+  &-bottom {
+    bottom: -60%;
+    right: -140%;
+  }
+}

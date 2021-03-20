@@ -362,8 +362,10 @@ html, body {
 }
 
 body {
-  background-image: url(../../images/bg-pattern-top.svg), url(../../images/bg-pattern-bottom.svg);
+  position: relative;
+  overflow: hidden;
   background-position: top left, bottom right;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: #19A1AD;
   background-size: 500px;
@@ -382,6 +384,7 @@ body {
   /* Negative half of height. */
   margin-left: -200px;
   /* Negative half of width. */
+  z-index: 999;
 }
 .card-top {
   background-image: url(../../images/bg-pattern-card.svg);
@@ -433,6 +436,32 @@ body {
 }
 .card-stat {
   flex-direction: column;
+}
+
+.pattern-top, .pattern-bottom {
+  position: absolute;
+}
+.pattern-top {
+  top: -60%;
+  left: -140%;
+}
+.pattern-bottom {
+  bottom: -60%;
+  right: -140%;
+}
+
+/* ============================================= */
+/*              Media Queries                    */
+/* ============================================= */
+@media (min-width: 1440px) {
+  .pattern-top {
+    top: -50%;
+    left: -15%;
+  }
+  .pattern-bottom {
+    bottom: -60%;
+    right: -15%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
