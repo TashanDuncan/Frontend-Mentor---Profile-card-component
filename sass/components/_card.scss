@@ -1,0 +1,23 @@
+.card {
+
+    position: fixed;
+    width: 400px;
+    height: 200px;
+    top: 40%;
+    left: 50%;
+    margin-top: -100px; /* Negative half of height. */
+    margin-left: -200px; /* Negative half of width. */
+
+    &-top {
+        background-image: url(../../images/bg-pattern-card.svg);
+        background-repeat: repeat;
+        height: 80%;
+        width: 100%;
+    }
+
+    &-info {
+        @include center;
+        background-color: white;
+        padding: 0 100px; 
+    }
+}
