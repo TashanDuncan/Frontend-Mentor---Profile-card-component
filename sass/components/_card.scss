@@ -9,7 +9,7 @@
   z-index: 999;
 
   &-top {
-    background-image: url(./../images/bg-pattern-card.svg);
+    background-image: url(../images/bg-pattern-card.svg);
     background-repeat: repeat;
     height: 70%;
     width: 100%;
@@ -67,5 +67,9 @@
 
   &-stat {
     flex-direction: column;
+  }
+
+  &-text {
+      font-size: small;
   }
 }

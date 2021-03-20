@@ -388,7 +388,7 @@ body {
   z-index: 999;
 }
 .card-top {
-  background-image: url(./../images/bg-pattern-card.svg);
+  background-image: url(../images/bg-pattern-card.svg);
   background-repeat: repeat;
   height: 70%;
   width: 100%;
@@ -437,6 +437,9 @@ body {
 }
 .card-stat {
   flex-direction: column;
+}
+.card-text {
+  font-size: small;
 }
 
 .pattern-top, .pattern-bottom {
