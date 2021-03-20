@@ -1,18 +1,18 @@
-
 /* ============================================= */
 /*              Base styles                      */
 /* ============================================= */
 
 * {
-    font-family: 'Kumbh Sans', sans-serif;
-    box-sizing: border-box;
-    font-size: 18px;
-    list-style-type: none;
-  }
+  font-family: 'Kumbh Sans', sans-serif;
+  box-sizing: border-box;
+  font-size: 18px;
+  list-style-type: none;
+}
 
-html, body {
-    margin: 0;
-    height: 100%;
+html,
+body {
+  margin: 0;
+  height: 100%;
 }
 
 body {
@@ -21,7 +21,6 @@ body {
   background-position: top left, bottom right;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-color: #19A1AD;
+  background-color: #19a1ad;
   background-size: 500px;
 }
-  

@@ -2,23 +2,15 @@
 /*              Media Queries                    */
 /* ============================================= */
 @media (min-width: $desktop) {
-
-  .pattern{
-
+  .pattern {
     &-top {
       top: -50%;
       left: -15%;
     }
-  
+
     &-bottom {
       bottom: -60%;
       right: -15%;
     }
-
   }
-
-
-  
-
 }
-

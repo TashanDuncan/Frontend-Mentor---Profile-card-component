@@ -1,72 +1,71 @@
 .card {
+  position: fixed;
+  width: 400px;
+  height: 200px;
+  top: 40%;
+  left: 50%;
+  margin-top: -100px; /* Negative half of height. */
+  margin-left: -200px; /* Negative half of width. */
+  z-index: 999;
 
-    position: fixed;
-    width: 400px;
-    height: 200px;
-    top: 40%;
-    left: 50%;
-    margin-top: -100px; /* Negative half of height. */
-    margin-left: -200px; /* Negative half of width. */
-    z-index: 999;
-    
+  &-top {
+    background-image: url(../../images/bg-pattern-card.svg);
+    background-repeat: repeat;
+    height: 70%;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
 
-    &-top {
-        background-image: url(../../images/bg-pattern-card.svg);
-        background-repeat: repeat;
-        height: 70%;
-        width: 100%;
-        border-radius: 15px 15px 0 0 ;
-    }
+  &-info {
+    @include flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.4);
+  }
 
-    &-info {
-        @include flex;
-        flex-direction: column;
-        background-color: white;
-        border-radius: 0 0 15px 15px;
-        box-shadow: 0px 3px 15px rgba(0,0,0,0.4);
-    }
+  &-img {
+    position: absolute;
+    top: 43%;
+    border-radius: 50%;
+    border: white solid 5px;
+  }
 
-    &-img {
-        position: absolute;
-        top: 43%;
-        border-radius: 50%;
-        border: white solid 5px;
-    }
+  &-user {
+    padding: 80px 80px 20px 80px;
+  }
 
-    &-user {
-         padding: 80px 80px 20px 80px;
-    }
+  &-name,
+  &-number {
+    font-weight: 700;
+  }
 
-    &-name, &-number {
-        font-weight: 700;
-    }
+  &-age,
+  &-city,
+  &-text {
+    color: $neutral;
+    font-weight: 400;
+  }
 
-    &-age, &-city, &-text {
-        color: $neutral;
-        font-weight: 400;
-    }
+  &-city {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    font-size: smaller;
+  }
 
-    &-city{
-        display: block;
-        text-align: center;
-        margin: 10px;
-        font-size: smaller;
-    }
+  &-stats,
+  &-stat {
+    @include flex;
+    width: 100%;
+  }
 
-    &-stats, &-stat{
-        @include flex;
-        width: 100%;
-    }
+  &-stats {
+    padding: 30px;
+    border-top: solid 1px lighten($neutral, 30%);
+  }
 
-    &-stats{
-        padding: 30px;
-        border-top: solid 1px lighten($neutral, 30%);
-    }
-
-    &-stat{
-        flex-direction: column;
-    }
-
-    
-
+  &-stat {
+    flex-direction: column;
+  }
 }
